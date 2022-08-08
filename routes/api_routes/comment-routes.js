@@ -48,7 +48,7 @@ tech_blog_router.post("/", withAuth, async (req, res) => {
 
 
 
-Router.put("/:id", withAuth, async (req, res) => {
+tech_blog_router.put("/:id", withAuth, async (req, res) => {
     try {
         const dbCommentData = await Comment.update(
             {
