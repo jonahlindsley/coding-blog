@@ -1,7 +1,7 @@
 const tech_blog_router = require('express').Router();
 const api_routes = require('./api_routes')
-const homeRoutes = require('./')
-const dashBoardRoutes = require()
+const homeRoutes = require('./homepage-routes')
+const homepageRoutes = require('./homepage-routes')
 
 tech_blog_router.use('/api', api_routes)
 
