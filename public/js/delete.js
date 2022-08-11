@@ -1,4 +1,4 @@
-const deleteFourmHandler = async event => {
+const deleteFourmHandler = async (event) => {
     event.preventDefault();
 
     
@@ -26,5 +26,5 @@ const deleteFourmHandler = async event => {
     
     document
     .querySelector('#delete-post-btn')
-    .addEventListener("submit", deleteFourmHandler)
+    .addEventListener("click", deleteFourmHandler)
     

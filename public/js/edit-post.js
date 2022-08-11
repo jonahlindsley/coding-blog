@@ -30,4 +30,4 @@ if (response.ok) {
 
 document
 .querySelector('#update-post-btn')
-.addEventListener("submit", editFourmHandler)
+.addEventListener("click", editFourmHandler)

@@ -11,7 +11,7 @@ const helpers = require('./utils/helpers')
 const SequelizeStore = require('connect-session-sequelize')(session.Store)
 
 app.use(express.static(path.join(__dirname, 'public')));
-// const handle = engine.create({ helpers })
+
 
 app.engine('hbs', engine({extname: '.hbs'}));
 app.set('view engine', 'hbs');

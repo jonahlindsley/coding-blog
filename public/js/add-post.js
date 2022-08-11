@@ -15,7 +15,7 @@ const response = await fetch('/api/posts', {
     },
 });
 
-// console.log(responce)
+
 if (response.ok) {
     document.location.replace("/homepage");
 }else{
