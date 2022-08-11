@@ -15,7 +15,7 @@ const response = await fetch('/api/posts', {
     },
 });
 
-console.log(responce)
+// console.log(responce)
 if (response.ok) {
     document.location.replace("/homepage");
 }else{
@@ -25,5 +25,5 @@ if (response.ok) {
 
 
 document
-.querySelector()
+.querySelector("#new-post-form")
 .addEventListener("submit", newFourmHandler)

@@ -29,5 +29,5 @@ if (response.ok) {
 
 
 document
-.querySelector()
+.querySelector('#update-post-btn')
 .addEventListener("submit", editFourmHandler)

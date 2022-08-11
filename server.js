@@ -15,7 +15,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.engine('hbs', engine({extname: '.hbs'}));
 app.set('view engine', 'hbs');
-app.use(session)
+
+const sess = {
+    secret: 'thisiswords',
+    cookie: { maxAge: 36000000 },
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+      db: db
+    })
+  };
+
+  
+app.use(session(sess))
 app.use(express.json());
 
 app.use(express.urlencoded({extended: true}));

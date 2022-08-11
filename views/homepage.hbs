@@ -23,7 +23,8 @@
 <section>
   <h3 class="text-white m-4">Your Posts</h3>
     {{#each posts as |post|}}
-      {{> dashboard-postinfo post}}
+      {{> homepage post}}
+      {{!-- was between homepage and post above ..-postinfo.. --}}
     {{/each}}
 
 </section>

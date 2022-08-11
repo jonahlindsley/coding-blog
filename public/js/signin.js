@@ -1,8 +1,8 @@
 
 async function signUpforum(event){
 event.preventDefault();
-const username = document.querySelector('.username').value.trim()
-const password = document.querySelector('.validate').value.trim()
+const username = document.querySelector("#username-signup").value.trim();
+const password = document.querySelector("#password-signup").value.trim();
 if (username && password){
     const response = await fetch('/api/users', {
         method: 'POST', 
@@ -20,4 +20,5 @@ if (username && password){
     }
 }
 }
-document.querySelector('.submitBtn').addEventListener('click', signUpforum)
+document.querySelector('#signup-form')
+.addEventListener('click', signUpforum)

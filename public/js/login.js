@@ -6,7 +6,7 @@ const username = document.querySelector("#username-login").value.trim();
 const password = document.querySelector("#password-login").value.trim();
 
 if (username && password){
-    const response = await fetch('api/users', {
+    const response = await fetch('api/users/login', {
         method: 'POST', 
         body: JSON.stringify({
          username, 
@@ -21,4 +21,5 @@ if (username && password){
     }
 }
 }
-document.querySelector('#login-form').addEventListener('click', logInforum)
+document.querySelector('#login-form')
+.addEventListener('click', logInforum)
