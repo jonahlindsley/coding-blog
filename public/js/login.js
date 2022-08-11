@@ -2,11 +2,11 @@
 
 async function logInforum(event){
 event.preventDefault();
-const username = document.querySelector('.username').value.trim()
-const password = document.querySelector('.validate').value.trim()
+const username = document.querySelector("#username-login").value.trim();
+const password = document.querySelector("#password-login").value.trim();
 
 if (username && password){
-    const response = await fetch('/api/users/login', {
+    const response = await fetch('api/users', {
         method: 'POST', 
         body: JSON.stringify({
          username, 
@@ -21,4 +21,4 @@ if (username && password){
     }
 }
 }
-document.querySelector('.submitBtn').addEventListener('click', logInforum)
+document.querySelector('#login-form').addEventListener('click', logInforum)

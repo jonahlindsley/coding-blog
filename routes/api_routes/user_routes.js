@@ -1,5 +1,5 @@
 const tech_blog_router = require('express').Router()
-const User = require('../../models');
+const {User, Post, Comment} = require('../../models');
 
 tech_blog_router.get('/', async (req, res) => {
     try {
@@ -98,6 +98,7 @@ tech_blog_router.post('/', async (req, res) => {
             username: req.body.username,
             password: req.body.password,
         });
+        console.log(req.session)
         req.session.save(() => {
             req.session.user_id = userData.id;
             req.session.username = userData.username;
