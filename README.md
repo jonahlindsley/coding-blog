@@ -1,6 +1,6 @@
 # tech-blog
 
-  [deployed application](./assets/deployed-blog.jpeg)
+  ![deployed application](./assets/deployed-blog.jpeg)
 
   [link for the deployed website](https://jonahs-hw-tech-blog.herokuapp.com/)
 
